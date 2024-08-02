@@ -22,12 +22,6 @@
    margin-bottom: 30px;
 }
 
-/* .hero_caption p{
-    max-width: 700px;
-    font-size: 17px;
-    margin-bottom: 20px;
-} */
-
  .hero_btn{
     display: flex;
     gap: 10px;
@@ -77,4 +71,9 @@
 
 .more_cards{
     padding-left: 6%;
+}
+
+.title_css{
+    font-family: 'Playwrite België Vlaams Gewest';
+    font-size: 100px;
 }

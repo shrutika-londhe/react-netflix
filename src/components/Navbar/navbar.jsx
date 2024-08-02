@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from '../Navbar/navbar.module.css'
-import logo from '../../assets/netflix_logo.svg'
+import logo from '../../assets/mainlogo.png'
 import search_icon from '../../assets/search.png'
 import bell_icon from '../../assets/bell_icon.png'
 import profile from '../../assets/profile.png'
