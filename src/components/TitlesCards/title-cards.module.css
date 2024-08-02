@@ -1,8 +1,7 @@
 .title_cards{
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;  
 }
-
 
 .title_cards h2{
     margin-bottom: 8px;
@@ -12,18 +11,23 @@
     display: flex;
     gap: 10px;
     overflow-x: scroll;
+
 }
 
 .card_list::-webkit-scrollbar{
     display: none;
+    
 }
 
 .card_list img{
     width: 240px;
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
-.card_list .card p{
+.removeline{
    text-align: center;
+   color: #fff;
+    text-decoration: none;
 }
