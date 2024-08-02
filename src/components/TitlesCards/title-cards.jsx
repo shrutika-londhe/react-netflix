@@ -1,8 +1,13 @@
 import React from 'react'
+import classes from "../TitlesCards/title-cards.module.css"
+import Cards from '../../assets/cards/cards'
 
 const TitleCards = () => {
   return (
-    <div>title-cards</div>
+    <div className={classes.container}>
+      {/* <h2>Your Next Watch</h2> */}
+      {/* <Cards/> */}
+    </div>
   )
 }
 
