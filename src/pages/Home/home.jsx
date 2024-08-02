@@ -32,10 +32,16 @@ const Home = () => {
                   
                   {/* <button className={`${classes.btn} ${classes.btn_dark}`}><img src={info_icon} alt="" />More Info</button> */}
                 </div>
+                <TitleCards/>
             </div>
          </div>
-      <TitleCards/>
-      </div>
+      <div className={classes.more_cards}>
+      <TitleCards title={"Blockbuster Movies"}/>
+      <TitleCards title={"Only on Netflix"}/>
+      <TitleCards title={"Upcoming"}/>
+      <TitleCards title={"Top Pics for you"}/>
+        </div>      
+    </div>
   )
 }
 
