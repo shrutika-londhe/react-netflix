@@ -7,6 +7,7 @@ import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import { Container } from 'react-bootstrap';
 import TitleCards from '../../components/TitlesCards/title-cards';
+import Footer from '../../components/Footer/footer';
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ const Home = () => {
       <TitleCards title={"Only on Netflix"}/>
       <TitleCards title={"Upcoming"}/>
       <TitleCards title={"Top Pics for you"}/>
+      <Footer/>
         </div>      
     </div>
   )
