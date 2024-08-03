@@ -5,12 +5,8 @@ import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 
-
 const firebaseConfig = {
-<<<<<<< HEAD
-=======
-  
->>>>>>> 74a92025b05e261a73f47e27160a2cdece7c5173
+
   authDomain: "react-netflix-96f90.firebaseapp.com",
   projectId: "react-netflix-96f90",
   storageBucket: "react-netflix-96f90.appspot.com",
