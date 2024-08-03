@@ -5,6 +5,7 @@ import search_icon from '../../assets/search.png'
 import bell_icon from '../../assets/bell_icon.png'
 import profile from '../../assets/profile.png'
 import drop from '../../assets/drop.png'
+import { logout } from '../../firbase'
 
 const Navbar = () => {
   return (
@@ -28,7 +29,7 @@ const Navbar = () => {
                     <img src={profile} alt="" className='icons'/>
                     <img src={drop} alt="" className='icons'/>
                     <div className={classes.dropdown}>
-                        <p>Sign Out of Netflix</p>
+                        <p onClick={()=>{logout()}}>Sign Out of Netflix</p>
                     </div>
                 </div>
             </div>

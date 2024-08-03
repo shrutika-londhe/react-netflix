@@ -5,8 +5,9 @@ import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 
-const firebaseConfig = {
 
+const firebaseConfig = {
+ 
   authDomain: "react-netflix-96f90.firebaseapp.com",
   projectId: "react-netflix-96f90",
   storageBucket: "react-netflix-96f90.appspot.com",
@@ -17,8 +18,9 @@ const firebaseConfig = {
 
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
+const auth = getAuth(app)
+const db = getFirestore(app)
+const analytics = getAnalytics(app);
 
 const signup = async (name, email, password)=>{
     try{

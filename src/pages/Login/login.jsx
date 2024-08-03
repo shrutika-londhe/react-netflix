@@ -5,9 +5,6 @@ import mainlogo from '../../assets/mainlogo.png'
 import {login, signup} from '../../firbase';
 import netflix_spinner from '../../assets/netflix_spinner.gif';
 
-
-
-
 const Login = () => {
 
 const [signState, setSignState] = useState("Sign In");
@@ -32,8 +29,6 @@ const user_auth = async (event)=>{
 }
 
 
-
-
   return (
     loading?<div className={classes.login_spinner}>
       <img src={netflix_spinner} alt="" />
@@ -44,10 +39,10 @@ const user_auth = async (event)=>{
         <div className={classes.login_form}>
          <h1>{signState}</h1>
          <form>
-          {signState === "Sign Up" ?<input type="text" name="" id="" placeholder='Your Name'/>:<></>}
-          <input type="email" name="" id="" placeholder='Email' />
-          <input type="password" name="" id="" placeholder='Password'/>
-          <button>{signState}</button>
+          {signState === "Sign Up" ?<input type="text" name="" id="" value={name} onChange={(e)=>{setName(e.target.value)}} placeholder='Your Name'/>:<></>}
+          <input type="email" name="" id="" value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='Email' />
+          <input type="password" name="" id="" value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password'/>
+          <button onClick={user_auth} type="submit">{signState}</button>
           <div className={classes.form_help}>
             <div className={classes.remember}>
               <input type="checkbox"/>
