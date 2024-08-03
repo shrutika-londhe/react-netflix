@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useRef } from 'react'
+import React from 'react'
 import classes from '../Navbar/navbar.module.css'
 import logo from '../../assets/mainlogo.png'
 import search_icon from '../../assets/search.png'
@@ -7,21 +7,6 @@ import profile from '../../assets/profile.png'
 import drop from '../../assets/drop.png'
 
 const Navbar = () => {
-
-    const navRef = useRef();
-
-    useEffect(()=>{
-        window.addEventListener('scroll',()=>{
-            if(window.scrollY >= 80){
-                navRef.current.classList.add(classes.navdark);
-            }else{
-                navRef.current.classList.remove(classes.navdark);
-            }
-        })
-
-    },[])
-
-
   return (
        <div className={classes.navbar}>
             <div className={classes.navbar_left}>
