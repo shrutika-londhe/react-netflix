@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from '../Navbar/navbar.module.css'
 import logo from '../../assets/mainlogo.png'
 import search_icon from '../../assets/search.png'
@@ -8,8 +8,9 @@ import drop from '../../assets/drop.png'
 import { logout } from '../../firbase'
 
 const Navbar = () => {
+   
   return (
-       <div className={classes.navbar}>
+       <div className={classes.navbar} >
             <div className={classes.navbar_left}>
                 <img src={logo} alt="" height={87} width={100} />
                 <ul>

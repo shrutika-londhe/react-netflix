@@ -13,7 +13,7 @@ const Player = () => {
     name:"",
     key: "",
     published_at: "",
-    type_of: ""
+    typeof: ""
   });
 
   const options = {
@@ -39,7 +39,7 @@ const Player = () => {
       <div className={classes.player_info}>
         <p>{apiData.published_at.slice(0,10)}</p>
         <p>{apiData.name}</p>
-        <p>{apiData.type_of}</p>
+        <p>{apiData.typeof}</p>
       </div>
     </div>
   )

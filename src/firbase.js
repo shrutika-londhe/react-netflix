@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 
 
 const firebaseConfig = {
- 
+  
   authDomain: "react-netflix-96f90.firebaseapp.com",
   projectId: "react-netflix-96f90",
   storageBucket: "react-netflix-96f90.appspot.com",
